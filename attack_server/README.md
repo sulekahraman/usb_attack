@@ -65,13 +65,13 @@ chmod a-w /home/ftpuser
 
 8. Update networking External IP in Compute Engine console
 
-![Alt text](/figures/attack_server/external_ip.png?raw=true)
+![](../figures/external_id.png?raw=true)
 
 9. Update firewall rules in [GCP firewall console](https://console.cloud.google.com/networking/firewalls/list) by following the instructions [here](https://cloud.google.com/filestore/docs/configuring-firewall#creating_a_firewall_ingress_rule)
 
 Make sure tcp connection at port `21` (for FTP) and ports `pasv_min_port:pasv_max_port` specified in the `/etc/vsftpd.conf` file are allowed. Don't forget to apply the firewall rule you just created to the VM instance.
 
-![Alt text](/figures/attack_server/gcp_firewall_rules.png?raw=true)
+![](../figures/gcp_firewall_rules.png?raw=true)
 
 10. Now you can log into the FTP server from any computer on any network using ftp client
 ```
