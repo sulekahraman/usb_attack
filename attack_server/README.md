@@ -1,4 +1,4 @@
-# Instructions to setup FTP server on Google Compute Engine
+# Instructions to setup a FTP server on Google Compute Engine
 
 1. Create a new vm instance on Google Compute Engine using the Google API or the command line
 ```
